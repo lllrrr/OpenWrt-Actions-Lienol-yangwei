@@ -19,10 +19,10 @@ git clone https://github.com/Aslin-Ameng/luci-theme-Light.git package/luci-theme
 git clone https://github.com/Flowers-in-thorns/luci-app-vssr-coexist.git package/luci-app-vssr-coexist
 
 # uci-app-dockerman && diskman
-git clone https://github.com/lisaac/luci-lib-docker.git package/luci-lib-docker
-git clone https://github.com/lisaac/luci-app-dockerman.git package/luci-app-dockerman
-git clone https://github.com/lisaac/luci-app-diskman package/luci-app-diskman
-mkdir -p package/parted && cp -i package/luci-app-diskman/Parted.Makefile package/parted/Makefile
+#git clone https://github.com/lisaac/luci-lib-docker.git package/luci-lib-docker
+#git clone https://github.com/lisaac/luci-app-dockerman.git package/luci-app-dockerman
+#git clone https://github.com/lisaac/luci-app-diskman package/luci-app-diskman
+#mkdir -p package/parted && cp -i package/luci-app-diskman/Parted.Makefile package/parted/Makefile
 
 #创建自定义配置文件 - G-DOCK
 
@@ -183,9 +183,9 @@ CONFIG_PACKAGE_luci-app-netdata=y
 CONFIG_PACKAGE_luci-app-mwan3helper=y #分流
 CONFIG_PACKAGE_luci-app-zerotier=y #内网穿透
 CONFIG_PACKAGE_luci-app-acme=y
-CONFIG_PACKAGE_luci-app-docker=y
-CONFIG_PACKAGE_luci-app-dockerman=y
-CONFIG_PACKAGE_luci-app-diskman=y
+#CONFIG_PACKAGE_luci-app-docker=y
+#CONFIG_PACKAGE_luci-app-dockerman=y
+#CONFIG_PACKAGE_luci-app-diskman=y
 CONFIG_LUCI_LANG_zh-tw=y
 CONFIG_LUCI_LANG_en=y
 EOF
