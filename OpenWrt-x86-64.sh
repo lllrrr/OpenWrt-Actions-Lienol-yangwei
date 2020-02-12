@@ -18,6 +18,7 @@ git clone https://github.com/Leo-Jo-My/luci-theme-opentomcat.git package/luci-th
 git clone https://github.com/Aslin-Ameng/luci-theme-Night.git package/luci-theme-Night
 git clone https://github.com/Aslin-Ameng/luci-theme-Light.git package/luci-theme-Light
 #git clone https://github.com/Flowers-in-thorns/luci-app-vssr-coexist.git package/luci-app-vssr-coexist
+git clone https://github.com/coolsnowwolf/lede/tree/master/package/lean/luci-app-docker package/luci-app-docker
 
 # uci-app-dockerman && diskman
 git clone https://github.com/lisaac/luci-lib-docker.git package/luci-lib-docker
