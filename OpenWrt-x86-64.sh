@@ -11,13 +11,13 @@
 sed -i 's/192.168.1.1/10.0.0.1/g' package/base-files/files/bin/config_generate
 
 # 添加第三方软件包
-git clone https://github.com/KFERMercer/luci-app-serverchan package/luci-app-serverchan
+#git clone https://github.com/KFERMercer/luci-app-serverchan package/luci-app-serverchan
 git clone https://github.com/kang-mk/luci-app-smartinfo package/luci-app-smartinfo
 git clone https://github.com/Leo-Jo-My/luci-theme-opentomcat.git package/luci-theme-opentomcat
-git clone https://github.com/Leo-Jo-My/luci-theme-leo.git package/luci-theme-leo
+#git clone https://github.com/Leo-Jo-My/luci-theme-leo.git package/luci-theme-leo
 git clone https://github.com/Aslin-Ameng/luci-theme-Night.git package/luci-theme-Night
 git clone https://github.com/Aslin-Ameng/luci-theme-Light.git package/luci-theme-Light
-git clone https://github.com/Flowers-in-thorns/luci-app-vssr-coexist.git package/luci-app-vssr-coexist
+#git clone https://github.com/Flowers-in-thorns/luci-app-vssr-coexist.git package/luci-app-vssr-coexist
 
 # uci-app-dockerman && diskman
 git clone https://github.com/lisaac/luci-lib-docker.git package/luci-lib-docker
@@ -113,7 +113,7 @@ EOF
 
 # 第三方插件选择:
 cat >> .config <<EOF
-CONFIG_PACKAGE_luci-app-serverchan=y #微信推送
+#CONFIG_PACKAGE_luci-app-serverchan=y #微信推送
 CONFIG_PACKAGE_luci-app-smartinfo=y #磁盘健康监控
 EOF
 
@@ -149,14 +149,14 @@ EOF
 
 # 常用LuCI插件(禁用):
 cat >> .config <<EOF
-CONFIG_PACKAGE_luci-app-smartdns=y #smartdnsDNS服务
-CONFIG_PACKAGE_luci-app-adguardhome=y #ADguardHome去广告服务
-CONFIG_PACKAGE_luci-app-pppoe-relay=y #PPPoE穿透
-CONFIG_PACKAGE_luci-app-pppoe-server=y #PPPoE服务器
-CONFIG_PACKAGE_luci-app-trojan-server=yt #Trojan服务器
-CONFIG_PACKAGE_luci-app-v2ray-server=y #V2ray服务器
-CONFIG_PACKAGE_luci-app-pptp-vpnserver-manyusers=y #PPTP VPN 服务器
-CONFIG_PACKAGE_luci-app-hd-idle=y #磁盘休眠
+#CONFIG_PACKAGE_luci-app-smartdns=y #smartdnsDNS服务
+#CONFIG_PACKAGE_luci-app-adguardhome=y #ADguardHome去广告服务
+#CONFIG_PACKAGE_luci-app-pppoe-relay=y #PPPoE穿透
+#CONFIG_PACKAGE_luci-app-pppoe-server=y #PPPoE服务器
+#CONFIG_PACKAGE_luci-app-trojan-server=yt #Trojan服务器
+#CONFIG_PACKAGE_luci-app-v2ray-server=y #V2ray服务器
+#CONFIG_PACKAGE_luci-app-pptp-vpnserver-manyusers=y #PPTP VPN 服务器
+#CONFIG_PACKAGE_luci-app-hd-idle=y #磁盘休眠
 EOF
 
 # 常用LuCI插件(启用):
@@ -209,7 +209,7 @@ CONFIG_PACKAGE_luci-theme-bootstrap-mod=y
 CONFIG_PACKAGE_luci-theme-netgear-mc=y
 CONFIG_PACKAGE_luci-theme-argon-mod=y
 CONFIG_PACKAGE_luci-theme-opentomcat=y
-CONFIG_PACKAGE_luci-theme-leo=y
+#CONFIG_PACKAGE_luci-theme-leo=y
 CONFIG_PACKAGE_luci-theme-Night=y
 CONFIG_PACKAGE_luci-theme-Light=y
 EOF
