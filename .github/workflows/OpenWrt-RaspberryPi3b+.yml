@@ -18,8 +18,8 @@ on:
     types: [published]
 
 # 点赞触发
-#  watch:
-#    types: [started]
+  watch:
+    types: [started]
 
 # 编辑触发
 #  push:
@@ -81,7 +81,7 @@ jobs:
     - name: 安装源
       run: cd openwrt && ./scripts/feeds install -a
 
-    - name: 创建自定义配置文件 - OpenWrt-x86-64
+    - name: 创建自定义配置文件 - OpenWrt-RaspberryPi3b+.sh
       run: |
         [ -e files ] && mv files openwrt/files
         chmod +x $DIY_SH
