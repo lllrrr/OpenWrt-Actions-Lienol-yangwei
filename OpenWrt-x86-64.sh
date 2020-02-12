@@ -149,14 +149,14 @@ EOF
 
 # 常用LuCI插件(禁用):
 cat >> .config <<EOF
-#CONFIG_PACKAGE_luci-app-smartdns=y #smartdnsDNS服务
+CONFIG_PACKAGE_luci-app-smartdns=y #smartdnsDNS服务
 #CONFIG_PACKAGE_luci-app-adguardhome=y #ADguardHome去广告服务
 #CONFIG_PACKAGE_luci-app-pppoe-relay=y #PPPoE穿透
 #CONFIG_PACKAGE_luci-app-pppoe-server=y #PPPoE服务器
 #CONFIG_PACKAGE_luci-app-trojan-server=yt #Trojan服务器
 #CONFIG_PACKAGE_luci-app-v2ray-server=y #V2ray服务器
 #CONFIG_PACKAGE_luci-app-pptp-vpnserver-manyusers=y #PPTP VPN 服务器
-#CONFIG_PACKAGE_luci-app-hd-idle=y #磁盘休眠
+CONFIG_PACKAGE_luci-app-hd-idle=y #磁盘休眠
 EOF
 
 # 常用LuCI插件(启用):
@@ -186,6 +186,7 @@ CONFIG_PACKAGE_luci-app-mwan3helper=y #分流
 CONFIG_PACKAGE_luci-app-zerotier=y #内网穿透
 CONFIG_PACKAGE_luci-app-acme=y
 CONFIG_PACKAGE_luci-app-docker=y
+CONFIG_PACKAGE_luci-lib-docker=y
 CONFIG_PACKAGE_luci-app-dockerman=y
 CONFIG_PACKAGE_luci-app-diskman=y
 CONFIG_PACKAGE_luci-app-aria2=y
