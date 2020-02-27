@@ -36,8 +36,8 @@ on:
 #UPLOAD_FIRMWARE上传固件目录
 
 env:
-  REPO_URL: https://github.com/Lienol/openwrt
-  REPO_BRANCH: dev-master
+  REPO_URL: https://github.com/Lienol/lean-lede
+  REPO_BRANCH: master
   DIY_SH: G-DOCK.sh
   FREE_UP_DISK: false
   SSH_ACTIONS: false
