@@ -36,8 +36,8 @@ on:
 #UPLOAD_FIRMWARE上传固件目录
 
 env:
-  REPO_URL: https://github.com/Lienol/openwrt lean-lede
-  REPO_BRANCH: dev-lean-lede
+  REPO_URL: https://github.com/Lienol/openwrt
+  REPO_BRANCH: dev-master
   DIY_SH: G-DOCK.sh
   FREE_UP_DISK: false
   SSH_ACTIONS: false
@@ -74,13 +74,13 @@ jobs:
         sudo -E apt-get -qq autoremove --purge
         sudo -E apt-get -qq clean
     - name: 克隆源代码
-      run: git clone --depth 1 $REPO_URL -b $REPO_BRANCH lean-lede
+      run: git clone --depth 1 $REPO_URL -b $REPO_BRANCH openwrt
 
     - name: 更新源
-      run: cd lean-lede && ./scripts/feeds update -a
+      run: cd openwrt && ./scripts/feeds update -a
 
     - name: 安装源
-      run: cd lean-lede && ./scripts/feeds install -a
+      run: cd openwrt && ./scripts/feeds install -a
 
     - name: 创建自定义配置文件 - G-DOCK
       run: |
