@@ -12,7 +12,7 @@ sed -i 's/192.168.1.1/10.0.0.1/g' package/base-files/files/bin/config_generate
 
 # 添加第三方软件包
 #git clone https://github.com/KFERMercer/luci-app-serverchan package/luci-app-serverchan
-git clone https://github.com/kang-mk/luci-app-smartinfo package/luci-app-smartinfo
+#git clone https://github.com/kang-mk/luci-app-smartinfo package/luci-app-smartinfo
 git clone https://github.com/Leo-Jo-My/luci-theme-opentomcat.git package/luci-theme-opentomcat
 #git clone https://github.com/Leo-Jo-My/luci-theme-leo.git package/luci-theme-leo
 git clone https://github.com/Aslin-Ameng/luci-theme-Night.git package/luci-theme-Night
@@ -115,7 +115,7 @@ EOF
 # 第三方插件选择:
 cat >> .config <<EOF
 #CONFIG_PACKAGE_luci-app-serverchan=y #微信推送
-CONFIG_PACKAGE_luci-app-smartinfo=y #磁盘健康监控
+#CONFIG_PACKAGE_luci-app-smartinfo=y #磁盘健康监控
 EOF
 
 # Passwall插件:
@@ -206,9 +206,9 @@ EOF
 
 # LuCI主题:
 cat >> .config <<EOF
-CONFIG_PACKAGE_luci-theme-darkmatter=y
+#CONFIG_PACKAGE_luci-theme-darkmatter=y
 CONFIG_PACKAGE_luci-theme-bootstrap-mod=y
-CONFIG_PACKAGE_luci-theme-netgear-mc=y
+#CONFIG_PACKAGE_luci-theme-netgear-mc=y
 CONFIG_PACKAGE_luci-theme-argon-mod=y
 CONFIG_PACKAGE_luci-theme-opentomcat=y
 #CONFIG_PACKAGE_luci-theme-leo=y
