@@ -13,10 +13,10 @@ sed -i 's/192.168.1.1/10.0.0.1/g' package/base-files/files/bin/config_generate
 # 添加第三方软件包
 #git clone https://github.com/KFERMercer/luci-app-serverchan package/luci-app-serverchan
 #git clone https://github.com/kang-mk/luci-app-smartinfo package/luci-app-smartinfo
-git clone https://github.com/Leo-Jo-My/luci-theme-opentomcat.git package/luci-theme-opentomcat
+#git clone https://github.com/Leo-Jo-My/luci-theme-opentomcat.git package/luci-theme-opentomcat
 #git clone https://github.com/Leo-Jo-My/luci-theme-leo.git package/luci-theme-leo
-git clone https://github.com/Aslin-Ameng/luci-theme-Night.git package/luci-theme-Night
-git clone https://github.com/Aslin-Ameng/luci-theme-Light.git package/luci-theme-Light
+#git clone https://github.com/Aslin-Ameng/luci-theme-Night.git package/luci-theme-Night
+#git clone https://github.com/Aslin-Ameng/luci-theme-Light.git package/luci-theme-Light
 #git clone https://github.com/Flowers-in-thorns/luci-app-vssr-coexist.git package/luci-app-vssr-coexist
 #git clone https://github.com/docker/docker-ce.git package/docker-ce-master
 
@@ -210,10 +210,10 @@ cat >> .config <<EOF
 CONFIG_PACKAGE_luci-theme-bootstrap-mod=y
 #CONFIG_PACKAGE_luci-theme-netgear-mc=y
 CONFIG_PACKAGE_luci-theme-argon-mod=y
-CONFIG_PACKAGE_luci-theme-opentomcat=y
+#CONFIG_PACKAGE_luci-theme-opentomcat=y
 #CONFIG_PACKAGE_luci-theme-leo=y
-CONFIG_PACKAGE_luci-theme-Night=y
-CONFIG_PACKAGE_luci-theme-Light=y
+#CONFIG_PACKAGE_luci-theme-Night=y
+#CONFIG_PACKAGE_luci-theme-Light=y
 EOF
 
 # 常用软件包:
