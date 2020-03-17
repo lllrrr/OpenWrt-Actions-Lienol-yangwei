@@ -207,9 +207,9 @@ EOF
 # LuCI主题:
 cat >> .config <<EOF
 #CONFIG_PACKAGE_luci-theme-darkmatter=y
-CONFIG_PACKAGE_luci-theme-bootstrap-mod=y
+#CONFIG_PACKAGE_luci-theme-bootstrap-mod=y
 #CONFIG_PACKAGE_luci-theme-netgear-mc=y
-CONFIG_PACKAGE_luci-theme-argon-mod=y
+#CONFIG_PACKAGE_luci-theme-argon-mod=y
 #CONFIG_PACKAGE_luci-theme-opentomcat=y
 #CONFIG_PACKAGE_luci-theme-leo=y
 #CONFIG_PACKAGE_luci-theme-Night=y
